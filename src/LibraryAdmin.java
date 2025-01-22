@@ -36,8 +36,9 @@ public class LibraryAdmin implements Librarian{
             }
             System.out.println("Detail of "+cnt+" book");
             System.out.println("Title: "+myList.get(i).getTitle());
-            System.out.println("Author"+myList.get(i).getAuthor());
-            System.out.println("ISBN number is"+myList.get(i).getISBN());
+            System.out.println("Author: "+myList.get(i).getAuthor());
+            System.out.println("ISBN number is "+myList.get(i).getISBN());
+            System.out.println("\n--------------------------------");
             cnt++;
         }
     }

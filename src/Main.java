@@ -25,7 +25,7 @@ public class Main {
         String bonus1 = b1.toString();
         System.out.println(bonus1);
 
-        System.out.println(b2);
-        System.out.println(LibraryAdmin.issued_book);
+        System.out.println("Bonus print: "+b2);
+        System.out.println("Bonus print of static issued book "+LibraryAdmin.issued_book);
     }
 }
