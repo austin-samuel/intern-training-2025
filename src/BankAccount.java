@@ -4,7 +4,9 @@ public class BankAccount {
     private String accountHolderName;
     private Double accountBalance = 0.00;
     BankAccount(String name, Double amount) throws IOException, NullPointerException{
-        if(name.isEmpty()) throw new NullPointerException("Name cannot be empty");
+        if(name==null || name.isEmpty())
+            throw new NullPointerException("Name cannot be empty");
+
         if(amount<0) throw new IOException("Amount cannot be less than zero");
         this.accountHolderName = name;
         this.accountBalance = amount;
@@ -34,11 +36,8 @@ public class BankAccount {
     }
 
     public void setAccountHolderName(String accountHolderName) {
-        try {
-            if(accountHolderName.isEmpty()) throw new NullPointerException("Name cannot be empty");
-            this.accountHolderName = accountHolderName;
-        } catch (NullPointerException e) {
-            System.out.println("Exception while setting name :: "+e);
-        }
+        if(accountHolderName.isEmpty()) throw new NullPointerException("Name cannot be empty");
+        this.accountHolderName = accountHolderName;
+
     }
 }
