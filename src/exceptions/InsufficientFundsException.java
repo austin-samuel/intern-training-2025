@@ -1,8 +1,8 @@
 package exceptions;
 
-public class InsufficientBalanceException extends RuntimeException {
+public class InsufficientFundsException extends RuntimeException {
 
-  public InsufficientBalanceException(String message) {
+  public InsufficientFundsException(String message) {
     super(message);
   }
 }
